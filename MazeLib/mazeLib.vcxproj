@@ -132,7 +132,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="..\MazeTest\Cell.cpp" />
+    <ClCompile Include="..\MazeTest\Coin.cpp" />
+    <ClCompile Include="..\MazeTest\Exit.cpp" />
+    <ClCompile Include="..\MazeTest\Game.cpp" />
+    <ClCompile Include="..\MazeTest\Hero.cpp" />
+    <ClCompile Include="..\MazeTest\HeroCell.cpp" />
+    <ClCompile Include="..\MazeTest\Landscape.cpp" />
+    <ClCompile Include="..\MazeTest\Main.cpp" />
+    <ClCompile Include="..\MazeTest\Maze.cpp" />
+    <ClCompile Include="..\MazeTest\Mobs.cpp" />
+    <ClCompile Include="..\MazeTest\Wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MazeTest\Cell.h" />
+    <ClInclude Include="..\MazeTest\Coin.h" />
+    <ClInclude Include="..\MazeTest\Exit.h" />
+    <ClInclude Include="..\MazeTest\Game.h" />
+    <ClInclude Include="..\MazeTest\Hero.h" />
+    <ClInclude Include="..\MazeTest\HeroCell.h" />
+    <ClInclude Include="..\MazeTest\HeroEx.h" />
+    <ClInclude Include="..\MazeTest\Landscape.h" />
+    <ClInclude Include="..\MazeTest\Maze.h" />
+    <ClInclude Include="..\MazeTest\Mobs.h" />
+    <ClInclude Include="..\MazeTest\Wall.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
