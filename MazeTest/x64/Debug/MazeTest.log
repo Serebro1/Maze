@@ -1,0 +1,14 @@
+﻿  Cell.cpp
+  Coin.cpp
+  Exit.cpp
+  Game.cpp
+  Hero.cpp
+  HeroCell.cpp
+  Landscape.cpp
+  Main.cpp
+C:\Users\Otche\source\repos\MazeTest\MazeTest\Main.cpp(4,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Maze.cpp
+  Mobs.cpp
+  Wall.cpp
+  Создание кода...
+  MazeTest.vcxproj -> C:\Users\Otche\source\repos\MazeTest\x64\Debug\MazeTest.exe

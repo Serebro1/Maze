@@ -1,0 +1,9 @@
+C:\Users\Otche\source\repos\MazeTest\MazeNet\bin\Debug\MazeNet.exe.config
+C:\Users\Otche\source\repos\MazeTest\MazeNet\bin\Debug\MazeNet.exe
+C:\Users\Otche\source\repos\MazeTest\MazeNet\bin\Debug\MazeNet.pdb
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.csproj.AssemblyReference.cache
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.Properties.Resources.resources
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.csproj.GenerateResource.cache
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.csproj.CoreCompileInputs.cache
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.exe
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.pdb

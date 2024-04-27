@@ -1,0 +1,432 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Otche\\source\\repos\\MazeTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D28BB20-6B7F-42BC-985C-E79060AA649E}|MazeLibNet\\MazeLibNet.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeLibNet\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D28BB20-6B7F-42BC-985C-E79060AA649E}|MazeLibNet\\MazeLibNet.vcxproj|solutionrelative:MazeLibNet\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5802276-876A-4354-90DD-39967DDD3BB7}|mazeLib\\mazeLib.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\mazeLib\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5802276-876A-4354-90DD-39967DDD3BB7}|mazeLib\\mazeLib.vcxproj|solutionrelative:mazeLib\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8318FC67-F601-49EB-837D-1DC8474D238F}|MazeNet\\MazeNet.csproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\mazenet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8318FC67-F601-49EB-837D-1DC8474D238F}|MazeNet\\MazeNet.csproj|solutionrelative:mazenet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Maze.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Maze.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Hero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Hero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Mobs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Mobs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Wall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Wall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Wall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Wall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Maze.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Maze.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Mobs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Mobs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Hero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Hero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Cell.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Cell.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Cell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Cell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroCell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\HeroCell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Landscape.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Landscape.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Exit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Exit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroCell.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\HeroCell.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroEx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\HeroEx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Landscape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Landscape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Exit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837E29A-BBC3-480B-8AC0-BEB115C31868}|MazeTest\\MazeTest.vcxproj|solutionrelative:MazeTest\\Exit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeLib\\Source.cpp",
+              "RelativeDocumentMoniker": "MazeLib\\Source.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeLib\\Source.cpp",
+              "RelativeToolTip": "MazeLib\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T06:59:46.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeLibNet\\Source.cpp",
+              "RelativeDocumentMoniker": "MazeLibNet\\Source.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeLibNet\\Source.cpp",
+              "RelativeToolTip": "MazeLibNet\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T06:36:24.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeNet\\Form1.cs",
+              "RelativeDocumentMoniker": "MazeNet\\Form1.cs",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeNet\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MazeNet\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:23:37.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Game.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Game.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Game.cpp",
+              "RelativeToolTip": "MazeTest\\Game.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T10:14:35.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HeroCell.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroCell.h",
+              "RelativeDocumentMoniker": "MazeTest\\HeroCell.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroCell.h",
+              "RelativeToolTip": "MazeTest\\HeroCell.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-14T13:49:38.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Maze.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Maze.h",
+              "RelativeDocumentMoniker": "MazeTest\\Maze.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Maze.h",
+              "RelativeToolTip": "MazeTest\\Maze.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-31T09:24:52.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Landscape.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Landscape.h",
+              "RelativeDocumentMoniker": "MazeTest\\Landscape.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Landscape.h",
+              "RelativeToolTip": "MazeTest\\Landscape.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-14T07:00:10.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Exit.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Exit.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Exit.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Exit.cpp",
+              "RelativeToolTip": "MazeTest\\Exit.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-14T06:53:54.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Maze.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Maze.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Maze.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Maze.cpp",
+              "RelativeToolTip": "MazeTest\\Maze.cpp",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAUwPIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T10:14:27.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Coin.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Coin.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Coin.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Coin.cpp",
+              "RelativeToolTip": "MazeTest\\Coin.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T10:15:12.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Wall.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Wall.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Wall.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Wall.cpp",
+              "RelativeToolTip": "MazeTest\\Wall.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T10:15:02.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Mobs.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Mobs.h",
+              "RelativeDocumentMoniker": "MazeTest\\Mobs.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Mobs.h",
+              "RelativeToolTip": "MazeTest\\Mobs.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-24T06:47:31.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Main.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Main.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Main.cpp",
+              "RelativeToolTip": "MazeTest\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T10:14:04.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Mobs.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Mobs.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Mobs.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Mobs.cpp",
+              "RelativeToolTip": "MazeTest\\Mobs.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-24T06:45:03.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Game.h",
+              "RelativeDocumentMoniker": "MazeTest\\Game.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Game.h",
+              "RelativeToolTip": "MazeTest\\Game.h",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T10:17:16.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HeroCell.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroCell.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\HeroCell.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroCell.cpp",
+              "RelativeToolTip": "MazeTest\\HeroCell.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-14T06:53:56.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Coin.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Coin.h",
+              "RelativeDocumentMoniker": "MazeTest\\Coin.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Coin.h",
+              "RelativeToolTip": "MazeTest\\Coin.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T10:16:25.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HeroEx.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroEx.h",
+              "RelativeDocumentMoniker": "MazeTest\\HeroEx.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\HeroEx.h",
+              "RelativeToolTip": "MazeTest\\HeroEx.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-14T07:00:10.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Hero.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Hero.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Hero.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Hero.cpp",
+              "RelativeToolTip": "MazeTest\\Hero.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T10:14:52.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Landscape.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Landscape.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Landscape.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Landscape.cpp",
+              "RelativeToolTip": "MazeTest\\Landscape.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-14T06:53:55.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Wall.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Wall.h",
+              "RelativeDocumentMoniker": "MazeTest\\Wall.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Wall.h",
+              "RelativeToolTip": "MazeTest\\Wall.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T10:17:52.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Exit.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Exit.h",
+              "RelativeDocumentMoniker": "MazeTest\\Exit.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Exit.h",
+              "RelativeToolTip": "MazeTest\\Exit.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-14T13:39:06.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Hero.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Hero.h",
+              "RelativeDocumentMoniker": "MazeTest\\Hero.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Hero.h",
+              "RelativeToolTip": "MazeTest\\Hero.h",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwBEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T10:17:28.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Cell.cpp",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Cell.cpp",
+              "RelativeDocumentMoniker": "MazeTest\\Cell.cpp",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Cell.cpp",
+              "RelativeToolTip": "MazeTest\\Cell.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-22T10:14:43.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Cell.h",
+              "DocumentMoniker": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Cell.h",
+              "RelativeDocumentMoniker": "MazeTest\\Cell.h",
+              "ToolTip": "C:\\Users\\Otche\\source\\repos\\MazeTest\\MazeTest\\Cell.h",
+              "RelativeToolTip": "MazeTest\\Cell.h",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-22T10:16:11.239Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
