@@ -6,7 +6,7 @@
   HeroCell.cpp
   Landscape.cpp
   Main.cpp
-C:\Users\Otche\source\repos\MazeTest\MazeTest\Main.cpp(4,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Otche\source\repos\MazeTest\MazeLib\Main.cpp(4,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Maze.cpp
   Mobs.cpp
   Wall.cpp
