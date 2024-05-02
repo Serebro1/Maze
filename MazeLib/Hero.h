@@ -12,6 +12,7 @@ public:
 	int getX() { return x; }
 	int getY() { return y; }
 	int getRad() { return rad; }
+	void setRad(int _rad) { rad = _rad; }
 	int getCoins() { return coins; }
 	int getHP() { return hp; }
 	int getKillMobs() { return killMobs; }

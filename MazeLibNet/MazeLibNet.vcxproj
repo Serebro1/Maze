@@ -145,12 +145,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="ControllerNet.cpp" />
+    <ClCompile Include="GameNet.cpp" />
+    <ClCompile Include="IObsNet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\mazeLib\mazeLib.vcxproj">
       <Project>{d5802276-876a-4354-90dd-39967ddd3bb7}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControllerNet.h" />
+    <ClInclude Include="ExceptionNet.h" />
+    <ClInclude Include="GameNet.h" />
+    <ClInclude Include="IObsNet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

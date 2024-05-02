@@ -37,7 +37,7 @@ void Controller::start()
 		exit(0);
 	}
 }
-void Game::move(ACTION act)
+void Games::move(ACTION act)
 {
 	int x = hero.getX();
 	int y = hero.getY();
@@ -83,7 +83,7 @@ void Game::move(ACTION act)
 		evnt();
 	}
 }
-void Game::randomStart()
+void Games::randomStart()
 {
 	int x = 0, y = 0;
 	while (x % 2 != 1 || y % 2 != 1 || map.getCell(x, y)->getStatus())
@@ -94,7 +94,7 @@ void Game::randomStart()
 	map.getCell(x, y) = new HeroCell();
 	hero.move(x, y);
 }
-Game::Game() {
+Games::Games() {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
 
 	cout << "Do you want to load maze from file 'in.txt'? (Y/N)\n";
@@ -134,13 +134,13 @@ Game::Game() {
 //	}
 //	cout << endl;
 //}
-void Game::save()
+void Games::save()
 {
 	ofstream file("out.txt");
 	file << (map.getHeight() / 2) << " " << (map.getWidth() / 2) << endl;
 	file << map;
 }
-void Game::read()
+void Games::read()
 {
 	ifstream file("in.txt");
 	int height;

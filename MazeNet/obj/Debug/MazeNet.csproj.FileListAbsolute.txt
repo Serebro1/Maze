@@ -7,3 +7,7 @@ C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.csproj.GenerateRe
 C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.csproj.CoreCompileInputs.cache
 C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.exe
 C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.pdb
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.Form1.resources
+C:\Users\Otche\source\repos\MazeTest\MazeNet\bin\Debug\MazeLibNet.dll
+C:\Users\Otche\source\repos\MazeTest\MazeNet\bin\Debug\MazeLibNet.pdb
+C:\Users\Otche\source\repos\MazeTest\MazeNet\obj\Debug\MazeNet.csproj.Up2Date

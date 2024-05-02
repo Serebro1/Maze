@@ -12,14 +12,14 @@ enum ACTION//множество - перечисление define переменных
 	LEFT,
 	RIGHT
 };
-class Game;
+class Games;
 class IObserver
 {
 public:
-	virtual void evnt(Game& game) = 0;
+	virtual void evnt(Games& game) = 0;
 };
 
-class Game {
+class Games {
 	Maze map;
 	Hero hero;
 	vector<IObserver*> allO; // может лучше List? 
@@ -29,7 +29,7 @@ class Game {
 		for (IObserver* o : allO) o->evnt(*this);
 	}
 public:
-	Game(); //конструктор по умолчанию
+	Games(); //конструктор по умолчанию
 	void move(ACTION act);
 	void printMap() { evnt(); };
 	//void printPlayer();
@@ -45,10 +45,10 @@ public:
 };
 
 class Controller {
-	Game* game;
+	Games* game;
 
 public:
-	Controller(Game* _game) :game(_game) {}
+	Controller(Games* _game) :game(_game) {}
 	void start();
 };
 
@@ -57,7 +57,7 @@ class ShowHpHero : public IObserver
 	ostream& out;
 public:
 	ShowHpHero(ostream& _out) : out(_out) {}
-	virtual void evnt(Game& game) {
+	virtual void evnt(Games& game) {
 		out << "\33[2K\r" << "HP: " << game.getHero().getHP() << endl;
 	}
 };
@@ -66,7 +66,7 @@ class ShowCoinsHero : public IObserver
 	ostream& out;
 public:
 	ShowCoinsHero(ostream& _out) : out(_out) {}
-	virtual void evnt(Game& game) {
+	virtual void evnt(Games& game) {
 		out << "\33[2K\r" << "Coins: " << game.getHero().getCoins() << endl;
 	}
 };
@@ -75,7 +75,7 @@ class ShowKillMobsHero : public IObserver
 	ostream& out;
 public:
 	ShowKillMobsHero(ostream& _out) : out(_out) {}
-	virtual void evnt(Game& game) {
+	virtual void evnt(Games& game) {
 		out << "\33[2K\r" << "Killed Mobs: " << game.getHero().getKillMobs() << endl;
 	}
 };
@@ -84,7 +84,7 @@ class ShowCntStep : public IObserver
 	ostream& out;
 public:
 	ShowCntStep(ostream& _out) : out(_out) {}
-	virtual void evnt(Game& game) {
+	virtual void evnt(Games& game) {
 		out << "\33[2K\r" << "Steps " << game.getHero().getSteps() << endl;
 	}
 };
@@ -93,7 +93,7 @@ class ShowHero : public IObserver
 	ostream& out;
 public:
 	ShowHero(ostream& _out) : out(_out) {}
-	virtual void evnt(Game& game) {
+	virtual void evnt(Games& game) {
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
 		int x = game.getHero().getX(), y = game.getHero().getY(), rad = game.getHero().getRad();
 		int height = game.getMap().getHeight(), width = game.getMap().getWidth();
@@ -114,7 +114,7 @@ class ShowMaze :public IObserver
 	ostream& out;
 public:
 	ShowMaze(ostream& _out) : out(_out) {}
-	virtual void evnt(Game& game) {
+	virtual void evnt(Games& game) {
 		out << game.getMap();
 	}
 };

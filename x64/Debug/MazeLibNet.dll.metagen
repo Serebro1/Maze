@@ -5,3 +5,64 @@ Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934
 	hash=None, flags=None
 Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ExZeroHpNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    what(): PrivateScope, Public, HideBySig
+Class ExWallHitNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    what(): PrivateScope, Public, HideBySig
+Class ExExitNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    what(): PrivateScope, Public, HideBySig
+Class ExWinNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    what(): PrivateScope, Public, HideBySig
+Class IObserverNet: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    event_m(GameNet): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GameNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    move(ACTION): PrivateScope, Public, HideBySig
+    update(): PrivateScope, Public, HideBySig
+    addObserver(IObserverNet): PrivateScope, Public, HideBySig
+    getMap(Maze*): PrivateScope, Public, HideBySig
+    getHero(Hero*): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ControllerNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(GameNet): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    step(Int32): PrivateScope, Public, HideBySig
+Class ShowHeroStatsNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :IObserverNet
+    Void .ctor(GameNet, System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    event_m(GameNet): PrivateScope, Public, Virtual, HideBySig
+Class ShowHeroView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :IObserverNet
+    Void .ctor(GameNet, System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    event_m(GameNet): PrivateScope, Public, Virtual, HideBySig
+Class ShowMazeView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :IObserverNet
+    Void .ctor(GameNet, System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    event_m(GameNet): PrivateScope, Public, Virtual, HideBySig

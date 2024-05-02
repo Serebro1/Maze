@@ -33,3 +33,14 @@ public:
 		return message.c_str();
 	}
 };
+
+class WinEx : public exception
+{
+	string message;
+public:
+	WinEx(const string& _message) : message(_message) {}
+	const char* what() const noexcept override
+	{
+		return message.c_str();
+	}
+};

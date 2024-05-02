@@ -1,42 +1,42 @@
 #include "Game.h"
 #include "Hero.h"
 #include <stdlib.h>
-void Controller::start()
-{
-	try {
-		char val = _getch();
-		while (val != 27) {
-			val = _getch();
-			if (val == 224)
-				val = _getch();
-			switch (val)
-			{
-			case 80:
-				game->move(DOWN);
-				break;
-			case 72:
-				game->move(UP);
-				break;
-			case 75:
-				game->move(LEFT);
-				break;
-			case 77:
-				game->move(RIGHT);
-				break;
-			case 27:
-				exit(0);
-			}
-		}
-	}
-	catch (const HpEx& gameOver)
-	{
-		system("cls");
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
-		cout << gameOver.what();
-		char Symb = _getch();
-		exit(0);
-	}
-}
+//void Controller::start()
+//{
+//	try {
+//		char val = _getch();
+//		while (val != 27) {
+//			val = _getch();
+//			if (val == 224)
+//				val = _getch();
+//			switch (val)
+//			{
+//			case 80:
+//				game->move(DOWN);
+//				break;
+//			case 72:
+//				game->move(UP);
+//				break;
+//			case 75:
+//				game->move(LEFT);
+//				break;
+//			case 77:
+//				game->move(RIGHT);
+//				break;
+//			case 27:
+//				exit(0);
+//			}
+//		}
+//	}
+//	catch (const HpEx& gameOver)
+//	{
+//		system("cls");
+//		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
+//		cout << gameOver.what();
+//		char Symb = _getch();
+//		exit(0);
+//	}
+//}
 void Game::move(ACTION act)
 {
 	int x = hero.getX();
@@ -58,35 +58,45 @@ void Game::move(ACTION act)
 	}
 	if ((x < 0) || (y < 0) || (x >= map.getHeight()) || (y >= map.getWidth()))
 		return;
-	try {
-		Cell* heroCell = map.getCell(hero.getX(), hero.getY());
-		Cell* mapCell = map.getCell(x, y);
-		map.getCell(x, y) = (*map.getCell(x, y)) + hero;
-		delete mapCell;
-		map.getCell(hero.getX(), hero.getY()) = *heroCell - hero;
-		delete heroCell;
-		hero.move(x, y);
-		hero.PlusSteps();
-		//output
-		evnt();
-		cout << "\33[2K\r";
-	}
-	catch (const ExitEx& err)
-	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
-		cout << "\33[2K\r" << err.what();
-	}
-	catch (const WallEx& err)
-	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
-		cout << "\33[2K\r" << err.what();
-		evnt();
-	}
+	Cell* heroCell = map.getCell(hero.getX(), hero.getY());
+	Cell* mapCell = map.getCell(x, y);
+	map.getCell(x, y) = (*map.getCell(x, y)) + hero;
+	delete mapCell;
+	map.getCell(hero.getX(), hero.getY()) = *heroCell - hero;
+	delete heroCell;
+	hero.move(x, y);
+	hero.PlusSteps();
+	//output
+	evnt();
+	//try {
+	//	Cell* heroCell = map.getCell(hero.getX(), hero.getY());
+	//	Cell* mapCell = map.getCell(x, y);
+	//	map.getCell(x, y) = (*map.getCell(x, y)) + hero;
+	//	delete mapCell;
+	//	map.getCell(hero.getX(), hero.getY()) = *heroCell - hero;
+	//	delete heroCell;
+	//	hero.move(x, y);
+	//	hero.PlusSteps();
+	//	//output
+	//	evnt();
+	//	cout << "\33[2K\r";
+	//}
+	//catch (const ExitEx& err)
+	//{
+	//	/*SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
+	//	cout << "\33[2K\r" << err.what();*/
+	//}
+	//catch (const WallEx& err)
+	//{
+	//	/*SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
+	//	cout << "\33[2K\r" << err.what();*/
+	//	evnt();
+	//}
 }
 void Game::randomStart()
 {
 	int x = 0, y = 0;
-	while (x % 2 != 1 || y % 2 != 1 || map.getCell(x, y)->getStatus())
+	while (x % 2 != 1 || y % 2 != 1 || map.getCell(x, y)->getStatus() || map.getCell(x, y)->getValue() == '.')
 	{
 		x = (int)(((double)rand() / RAND_MAX) * map.getHeight());
 		y = (int)(((double)rand() / RAND_MAX) * map.getWidth());
@@ -95,7 +105,7 @@ void Game::randomStart()
 	hero.move(x, y);
 }
 Game::Game() {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
+	/*SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
 
 	cout << "Do you want to load maze from file 'in.txt'? (Y/N)\n";
 	unsigned int flag = _getch();
@@ -104,17 +114,21 @@ Game::Game() {
 		cout << "Please, enter height and width for maze:\n";
 		int height, width;
 		cin >> height >> width;
-		map = Maze(height, width);
-		map.generation();
-		save();
-	}
-	else if (flag == 89) {
-		read();
-		map.createEnviroment();
-	}
-	else map.generation();
+		
+	}*/
+	//else
+	read();
 	randomStart();
-	system("cls");
+	map.createEnviroment();
+	evnt();
+}
+Game::Game(int h, int w, int r)
+{
+	map = Maze(h, w);
+	map.generation();
+	save();
+	hero.setRad(r);
+	randomStart();
 	evnt();
 }
 
