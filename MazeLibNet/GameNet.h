@@ -24,7 +24,7 @@ class Omodel;
 public ref class GameNet
 {
 	Game* g;
-	List<IObserverNet^>^ allObs;
+	System::Collections::ArrayList^ allObs;
 	void addObsC();
 public:
 	GameNet();

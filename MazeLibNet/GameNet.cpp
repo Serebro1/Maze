@@ -8,14 +8,14 @@ GameNet::GameNet()
 {
 	srand(time(NULL));
 	g = new Game();
-	allObs = gcnew List<IObserverNet^>(3);
+	allObs = gcnew System::Collections::ArrayList(0);
 	addObsC();
 }
 GameNet::GameNet(int _h, int _w, int _rad)
 {
 	srand(time(NULL));
 	g = new Game(_h, _w, _rad);
-	allObs = gcnew List<IObserverNet^>(3);
+	allObs = gcnew System::Collections::ArrayList(0);
 	addObsC();
 }
 GameNet::~GameNet()

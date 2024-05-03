@@ -40,6 +40,7 @@ ShowHeroView::ShowHeroView(GameNet^ gm, Panel^ panelHero)
 	{
 		for (int j = y - rad; j <= y + rad; j++)
 		{
+			if ((i < 0) || (j < 0) || (i >= height) || (j >= width)) { maze << "/"; }
 			gm->getMap().getCell(i, j)->visit(maze);
 		}
 		maze << "\n";

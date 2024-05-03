@@ -1,3 +1,11 @@
-﻿  ControllerNet.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+﻿  IObsNet.cpp
+C:\Users\Otche\source\repos\MazeTest\MazeLibNet\GameNet.h(17,18): warning C4570: IObserverNet: не был объявлен явно как абстрактный, однако содержит абстрактные функции
+  (компиляция исходного файла "IObsNet.cpp")
+  C:\Users\Otche\source\repos\MazeTest\MazeLibNet\GameNet.h(17,18):
+  void IObserverNet::event_m(GameNet ^): абстрактный
+  C:\Users\Otche\source\repos\MazeTest\MazeLibNet\GameNet.h(19,15):
+   см. объявление "IObserverNet::event_m"
+  
+  ControllerNet.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
 MazeLib.lib(Wall.obj) : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/INCREMENTAL:NO"
   MazeLibNet.vcxproj -> C:\Users\Otche\source\repos\MazeTest\x64\Debug\MazeLibNet.dll
