@@ -19,7 +19,6 @@ namespace MazeNet
         private ShowHeroStatsNet viewStats;
         private ShowMazeView viewMaze;
         private ShowHeroView viewHero;
-        
         private bool correctData()
         {
             if (int.TryParse(HeigText.Text, out _) && int.TryParse(WidthText.Text, out _) && int.TryParse(VisText.Text, out _))
@@ -40,11 +39,12 @@ namespace MazeNet
         private void LoadViews()
         {
             viewStats = new ShowHeroStatsNet(gmNet, StatsPanel);
-            viewMaze = new ShowMazeView(gmNet, DungPanel);
-            viewHero = new ShowHeroView(gmNet, HeroPanel);
+            viewMaze = new ShowMazeView(MazePanel);
+            viewHero = new ShowHeroView(HeroPanel);
             gmNet.addObserver(viewStats);
             gmNet.addObserver(viewMaze);
             gmNet.addObserver(viewHero);
+            
             StartBut.Enabled = false;
             FileSaveBut.Enabled = false;
             FileReadBut.Enabled = false;
@@ -53,6 +53,7 @@ namespace MazeNet
             ExcepLab.ForeColor = Color.Red;
             ExcepLab.Font = new Font("Times New Roman", 16, FontStyle.Bold);
             ErrorPanel.Controls.Add(ExcepLab);
+            gmNet.update();
         }
         private void StartBut_Click(object sender, EventArgs e)
         {
@@ -102,6 +103,8 @@ namespace MazeNet
             try
             {
                 ctrl.step((int)e.KeyCode);
+                HeroPanel.Refresh();
+                MazePanel.Refresh();
                 ExcepLab.Text = "";
             }
             catch (ExZeroHpNet ex)
@@ -125,6 +128,14 @@ namespace MazeNet
                 viewStats.event_m(gmNet);
             }
             
+        }
+
+        private void MazePanel_Paint(object sender, PaintEventArgs e)
+        {
+            if (gmNet != null)
+            {
+                gmNet.update();
+            }
         }
     }
 }

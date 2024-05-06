@@ -4,6 +4,8 @@
 #include <vcclr.h>
 #include <vector>
 #include <sstream>
+#include <map>
+
 using namespace System;
 using namespace System::Drawing;
 //using namespace System::Runtime::InteropServices; // for GCHandle
@@ -12,6 +14,22 @@ using namespace System::Windows::Forms::ComponentModel;
 using namespace System::Collections::Generic;
 using namespace std;
 
+class GrPainter : public painter
+{
+	gcroot < Graphics^> gr;
+	gcroot < Panel^> p;
+	map<string, gcroot<Icon^>> images;
+	int CellSize = 20;
+	Drawing::Rectangle rect;
+public:
+	GrPainter(Graphics^ _g, Panel^ _p) :gr(_g), p(_p) {}
+
+	void setGr(Graphics^ _g, Panel^ _p) {
+		gr = _g; p = _p;
+	}
+
+	virtual void paint(ostream& out, Cell*& c, int x, int y);
+};
 ref class GameNet;
 
 public ref class IObserverNet {
@@ -23,6 +41,7 @@ class Omodel;
 
 public ref class GameNet
 {
+	GrPainter* painter;
 	Game* g;
 	System::Collections::ArrayList^ allObs;
 	void addObsC();
@@ -30,6 +49,17 @@ public:
 	GameNet();
 	GameNet(int h, int w, int rad);
 	~GameNet();
+	void paint(Graphics^ gr, Panel^ p, int x, int y)
+	{
+		if (painter == nullptr) {
+			painter = new GrPainter(gr, p);
+			g->init(painter);
+		}
+		painter->setGr(gr, p);
+		
+	}
+	void paintPlayer(Panel^ p, ostream& out);
+	void paintMaze(Panel^ p, ostream& out);
 	void move(ACTION key)
 	{
 		try {

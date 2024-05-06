@@ -1,58 +1,22 @@
 #include "Game.h"
 #include "Hero.h"
 #include <stdlib.h>
-//void Controller::start()
-//{
-//	try {
-//		char val = _getch();
-//		while (val != 27) {
-//			val = _getch();
-//			if (val == 224)
-//				val = _getch();
-//			switch (val)
-//			{
-//			case 80:
-//				game->move(DOWN);
-//				break;
-//			case 72:
-//				game->move(UP);
-//				break;
-//			case 75:
-//				game->move(LEFT);
-//				break;
-//			case 77:
-//				game->move(RIGHT);
-//				break;
-//			case 27:
-//				exit(0);
-//			}
-//		}
-//	}
-//	catch (const HpEx& gameOver)
-//	{
-//		system("cls");
-//		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
-//		cout << gameOver.what();
-//		char Symb = _getch();
-//		exit(0);
-//	}
-//}
 void Game::move(ACTION act)
 {
 	int x = hero.getX();
 	int y = hero.getY();
 
 	switch (act) {
-	case UP:
+	case LEFT:
 		x--;
 		break;
-	case DOWN:
+	case RIGHT:
 		x++;
 		break;
-	case LEFT:
+	case UP:
 		y--;
 		break;
-	case RIGHT:
+	case DOWN:
 		y++;
 		break;
 	}
@@ -68,30 +32,7 @@ void Game::move(ACTION act)
 	hero.PlusSteps();
 	//output
 	evnt();
-	//try {
-	//	Cell* heroCell = map.getCell(hero.getX(), hero.getY());
-	//	Cell* mapCell = map.getCell(x, y);
-	//	map.getCell(x, y) = (*map.getCell(x, y)) + hero;
-	//	delete mapCell;
-	//	map.getCell(hero.getX(), hero.getY()) = *heroCell - hero;
-	//	delete heroCell;
-	//	hero.move(x, y);
-	//	hero.PlusSteps();
-	//	//output
-	//	evnt();
-	//	cout << "\33[2K\r";
-	//}
-	//catch (const ExitEx& err)
-	//{
-	//	/*SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
-	//	cout << "\33[2K\r" << err.what();*/
-	//}
-	//catch (const WallEx& err)
-	//{
-	//	/*SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BrightRed);
-	//	cout << "\33[2K\r" << err.what();*/
-	//	evnt();
-	//}
+
 }
 void Game::randomStart()
 {
@@ -105,18 +46,6 @@ void Game::randomStart()
 	hero.move(x, y);
 }
 Game::Game() {
-	/*SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
-
-	cout << "Do you want to load maze from file 'in.txt'? (Y/N)\n";
-	unsigned int flag = _getch();
-	if (flag == 78) {
-		system("cls");
-		cout << "Please, enter height and width for maze:\n";
-		int height, width;
-		cin >> height >> width;
-		
-	}*/
-	//else
 	read();
 	randomStart();
 	map.createEnviroment();
@@ -132,22 +61,44 @@ Game::Game(int h, int w, int r)
 	evnt();
 }
 
-//void Game::printPlayer()
-//{
-//	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
-//	int x = hero.getX(), y = hero.getY(), rad = hero.getRad(), height = map.getHeight(), width = map.getWidth();
-//	cout << "Hp: " << hero.getHP() << endl << "Coins: " << hero.getCoins() << endl << "Killed mobs: " << hero.getKillMobs() << endl << "Steps " << hero.getSteps() << endl;
-//	for (int i = x - rad; i <= x + rad; i++)
-//	{
-//		for (int j = y - rad; j <= y + rad; j++)
-//		{
-//			if ((i < 0) || (j < 0) || (i >= height) || (j >= width)) { cout << "/"; }
-//			else map.getCell(i, j)->visit(cout);
-//		}
-//		cout << endl;
-//	}
-//	cout << endl;
-//}
+void Game::paintPlayer(ostream& out, int cellSize)
+{
+	if (p != nullptr) {
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
+		Cell* emptyCell = new EmptyCell();
+		int x = hero.getX(), y = hero.getY(), rad = hero.getRad(), height = map.getHeight(), width = map.getWidth();
+		//cout << "Hp: " << hero.getHP() << endl << "Coins: " << hero.getCoins() << endl << "Killed mobs: " << hero.getKillMobs() << endl << "Steps " << hero.getSteps() << endl;
+		int startX = hero.getX() - rad;
+		int startY = hero.getY() - rad;
+		for (int j = startY; j <= y + rad; j++)
+		{
+			for (int i = startX; i <= x + rad; i++)
+			{
+				if ((i < 0) || (j < 0) || (i >= height) || (j >= width)) { p->paint(out, emptyCell, i - startX, j - startY); }
+				else p->paint(out, map.getCell(i, j), i - startX, j - startY);
+			}
+			out << endl;
+		}
+		out << endl;
+		delete emptyCell;
+	}
+}
+void Game::paintMaze(ostream& out, int cellSize)
+{
+	if (p != nullptr)
+	{
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
+		for (int i = 0; i < map.getHeight(); i++)
+		{
+			for (int j = 0; j < map.getWidth(); j++)
+			{
+				p->paint(out, map.getCell(i, j), i, j);
+			}
+			cout << endl;
+		}
+		cout << endl;
+	}
+}
 void Game::save()
 {
 	ofstream file("out.txt");

@@ -14,6 +14,7 @@ public:
 	{
 		out << ' ';
 	}
+	string getImage() { return "exit"; }
 	char getValue() { return ' '; }
 	bool haveHero() { return false; }
 };

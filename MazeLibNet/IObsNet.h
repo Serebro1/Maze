@@ -10,16 +10,16 @@ public:
 
 public ref class ShowHeroView : IObserverNet
 {
-	Label^ lbHero;
+	Panel^ PHero;
 public:
-	ShowHeroView(GameNet^ gm, Panel^ panelStats);
-	void event_m(GameNet^ gm) override;
+	ShowHeroView(Panel^ pHero) { PHero = pHero; };
+	void event_m(GameNet^ gm) override { gm->paintPlayer(PHero, cout); }
 };
-
+//
 public ref class ShowMazeView : IObserverNet
 {
-	Label^ lbMaze;
+	Panel^ PMaze;
 public:
-	ShowMazeView(GameNet^ gm, Panel^ panelStats);
-	void event_m(GameNet^ gm) override;
+	ShowMazeView(Panel^ pMaze) { PMaze = pMaze; };
+	void event_m(GameNet^ gm) override { gm->paintMaze(PMaze, cout); }
 };

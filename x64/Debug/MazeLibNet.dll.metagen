@@ -41,6 +41,9 @@ Class GameNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Interfaces:
     System.IDisposable
   Methods:
+    paint(Graphics, Panel, Int32, Int32): PrivateScope, Public, HideBySig
+    paintPlayer(Panel, basic_ostream<char\,std::char_traits<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    paintMaze(Panel, basic_ostream<char\,std::char_traits<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     move(ACTION): PrivateScope, Public, HideBySig
     update(): PrivateScope, Public, HideBySig
     addObserver(IObserverNet): PrivateScope, Public, HideBySig
@@ -58,11 +61,11 @@ Class ShowHeroStatsNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     event_m(GameNet): PrivateScope, Public, Virtual, HideBySig
 Class ShowHeroView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :IObserverNet
-    Void .ctor(GameNet, System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     event_m(GameNet): PrivateScope, Public, Virtual, HideBySig
 Class ShowMazeView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :IObserverNet
-    Void .ctor(GameNet, System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     event_m(GameNet): PrivateScope, Public, Virtual, HideBySig

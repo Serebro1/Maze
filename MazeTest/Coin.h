@@ -11,9 +11,10 @@ public:
 	}
 	void visit(ostream& out)
 	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (getBackColor() << 4) | getTextColor());
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (getBackColor() << 4) | getTextColor());
 		out << '.';
 	}
+	
 	char getValue() { return '.'; }
 	bool haveHero() { return false; }
 };

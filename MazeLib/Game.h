@@ -5,6 +5,13 @@
 #include <vector>
 #include <fstream>
 #include <stdlib.h>
+class painter {
+public:
+	virtual void paint(ostream& out, Cell*& c, int x, int y)
+	{
+		c->visit(out);
+	}
+};
 enum ACTION//множество - перечисление define переменных
 {
 	UP,
@@ -23,12 +30,20 @@ class Game {
 	Maze map;
 	Hero hero;
 	vector<IObserverC*> allO; // может лучше List? 
+	int x, y; // где рисовать
+	painter* p;
 	void evnt() { // оповещение всех наблюдателей
 		for (IObserverC* o : allO) o->evnt(*this);
 	}
 public:
 	Game(); //конструктор по умолчанию
 	Game(int h, int w, int r);
+	void init(painter* _p) {
+		if (p != nullptr) delete p;
+		p = _p;
+	}
+	void paintPlayer(ostream& out, int cellSize = 1);
+	void paintMaze(ostream& out, int cellSize = 1);
 	void move(ACTION act);
 	void printMap() { evnt(); };
 	//void printPlayer();

@@ -41,7 +41,7 @@ public:
 	virtual Cell* operator-(Hero& hero) = 0;
 	virtual void visit(ostream& out) = 0;
 	virtual bool haveHero() = 0;
-
+	virtual string getImage() = 0;
 	bool getStatus() { return visited; }
 	void setStatus(bool _visited) { visited = _visited; }
 

@@ -14,6 +14,7 @@ public:
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (getBackColor() << 4) | getTextColor());
 		out << ' ';
 	}
+	string getImage() { return "emptycell"; }
 	char getValue() { return ' '; }
 	bool haveHero() { return false; }
 };

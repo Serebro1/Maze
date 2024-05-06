@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.StatsPanel = new System.Windows.Forms.Panel();
-            this.DungPanel = new System.Windows.Forms.Panel();
             this.HeroPanel = new System.Windows.Forms.Panel();
             this.FileSaveBut = new System.Windows.Forms.Button();
             this.StartBut = new System.Windows.Forms.Button();
@@ -48,33 +47,25 @@
             this.SaveLab = new System.Windows.Forms.Label();
             this.VisLab = new System.Windows.Forms.Label();
             this.VisText = new System.Windows.Forms.TextBox();
+            this.MazePanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // StatsPanel
             // 
             this.StatsPanel.BackColor = System.Drawing.SystemColors.Window;
             this.StatsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StatsPanel.Location = new System.Drawing.Point(246, 12);
+            this.StatsPanel.Location = new System.Drawing.Point(350, 12);
             this.StatsPanel.Name = "StatsPanel";
-            this.StatsPanel.Size = new System.Drawing.Size(542, 128);
+            this.StatsPanel.Size = new System.Drawing.Size(708, 128);
             this.StatsPanel.TabIndex = 0;
-            // 
-            // DungPanel
-            // 
-            this.DungPanel.BackColor = System.Drawing.SystemColors.Window;
-            this.DungPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DungPanel.Location = new System.Drawing.Point(463, 143);
-            this.DungPanel.Name = "DungPanel";
-            this.DungPanel.Size = new System.Drawing.Size(324, 277);
-            this.DungPanel.TabIndex = 1;
             // 
             // HeroPanel
             // 
             this.HeroPanel.BackColor = System.Drawing.SystemColors.Window;
             this.HeroPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HeroPanel.Location = new System.Drawing.Point(247, 146);
+            this.HeroPanel.Location = new System.Drawing.Point(246, 147);
             this.HeroPanel.Name = "HeroPanel";
-            this.HeroPanel.Size = new System.Drawing.Size(206, 154);
+            this.HeroPanel.Size = new System.Drawing.Size(283, 224);
             this.HeroPanel.TabIndex = 2;
             // 
             // FileSaveBut
@@ -136,9 +127,9 @@
             // 
             this.ErrorPanel.BackColor = System.Drawing.SystemColors.Window;
             this.ErrorPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ErrorPanel.Location = new System.Drawing.Point(247, 306);
+            this.ErrorPanel.Location = new System.Drawing.Point(247, 377);
             this.ErrorPanel.Name = "ErrorPanel";
-            this.ErrorPanel.Size = new System.Drawing.Size(206, 114);
+            this.ErrorPanel.Size = new System.Drawing.Size(282, 141);
             this.ErrorPanel.TabIndex = 9;
             // 
             // ErrorLab
@@ -253,12 +244,22 @@
             this.VisText.Text = "1";
             this.VisText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // MazePanel
+            // 
+            this.MazePanel.BackColor = System.Drawing.SystemColors.Window;
+            this.MazePanel.Location = new System.Drawing.Point(535, 146);
+            this.MazePanel.Name = "MazePanel";
+            this.MazePanel.Size = new System.Drawing.Size(839, 837);
+            this.MazePanel.TabIndex = 20;
+            this.MazePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MazePanel_Paint);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1450, 989);
+            this.Controls.Add(this.MazePanel);
             this.Controls.Add(this.VisText);
             this.Controls.Add(this.VisLab);
             this.Controls.Add(this.SaveLab);
@@ -277,7 +278,6 @@
             this.Controls.Add(this.StartBut);
             this.Controls.Add(this.FileSaveBut);
             this.Controls.Add(this.HeroPanel);
-            this.Controls.Add(this.DungPanel);
             this.Controls.Add(this.StatsPanel);
             this.DoubleBuffered = true;
             this.Name = "Form1";
@@ -292,7 +292,6 @@
         #endregion
 
         private System.Windows.Forms.Panel StatsPanel;
-        private System.Windows.Forms.Panel DungPanel;
         private System.Windows.Forms.Panel HeroPanel;
         private System.Windows.Forms.Button FileSaveBut;
         private System.Windows.Forms.Button StartBut;
@@ -311,6 +310,7 @@
         private System.Windows.Forms.Label SaveLab;
         private System.Windows.Forms.Label VisLab;
         private System.Windows.Forms.TextBox VisText;
+        private System.Windows.Forms.Panel MazePanel;
     }
 }
 
