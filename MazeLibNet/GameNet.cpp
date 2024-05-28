@@ -8,7 +8,7 @@ void GrPainter::paint(ostream& out, Cell*& c, int x, int y)
 		String^ tmp = gcnew String((c->getImage() + ".ico").c_str());
 		gcroot<Icon^> newImage = gcnew Icon(tmp);
 
-		images[imageName] = newImage;
+		images[imageName] = newImage; 
 	}
 	rect = Drawing::Rectangle(x * CellSize, y * CellSize, CellSize, CellSize);
 	gr->DrawIcon(images[imageName], rect);

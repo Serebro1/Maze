@@ -103,8 +103,6 @@ namespace MazeNet
             try
             {
                 ctrl.step((int)e.KeyCode);
-                HeroPanel.Refresh();
-                MazePanel.Refresh();
                 ExcepLab.Text = "";
             }
             catch (ExZeroHpNet ex)
